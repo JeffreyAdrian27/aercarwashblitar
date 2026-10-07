@@ -232,7 +232,7 @@ img, svg {
 /* Floating WhatsApp Button */
 .floating-wa-btn {
   position: fixed;
-  bottom: 28px;
+  bottom: 32px;
   right: 28px;
   z-index: 999;
   display: flex;
@@ -260,7 +260,7 @@ img, svg {
   }
   .floating-wa-btn {
     padding: 14px;
-    bottom: 20px;
+    bottom: 80px;
     right: 20px;
   }
 }

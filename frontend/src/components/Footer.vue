@@ -67,12 +67,13 @@
 
       <!-- Copyright & Bottom Bar -->
       <div class="footer-bottom">
-        <p class="copyright-text">&copy; {{ new Date().getFullYear() }} <a href="https://github.com/JeffreyAdrian27" target="_blank" rel="noopener noreferrer" class="copyright-author">Jeffrey Adrian</a></p>
+        <p class="copyright-text">&copy; {{ new Date().getFullYear() }} <a href="https://github.com/JeffreyAdrian27" target="_blank" rel="noopener noreferrer" class="copyright-author">Jeffrey Adrian. All rights reserved.</a></p>
         <div class="footer-socials">
           <a href="https://www.instagram.com/aercarwash.blitar/" target="_blank" rel="noopener noreferrer" class="social-tag instagram-highlight">
-            Instagram: @aercarwash.blitar
+            <img src="/instagram_icons.png" alt="Instagram Aer Carwash" class="instagram-icon-img" />
+            <span>@aercarwash.blitar</span>
           </a>
-          <router-link to="/location" class="social-tag">Petunjuk Lokasi</router-link>
+          <!-- <router-link to="/location" class="social-tag">Petunjuk Lokasi</router-link> -->
         </div>
       </div>
     </div>
@@ -220,6 +221,9 @@ import Logo from './Logo.vue'
   color: #94a3b8;
   font-size: 0.85rem;
   transition: color var(--transition-fast);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .social-tag:hover {
@@ -229,6 +233,28 @@ import Logo from './Logo.vue'
 .instagram-highlight {
   color: #38bdf8;
   font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.instagram-highlight:hover {
+  color: #ffffff;
+}
+
+.instagram-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  border-radius: 6px;
+  display: block;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: transform var(--transition-fast);
+}
+
+.instagram-highlight:hover .instagram-icon-img {
+  transform: scale(1.12);
 }
 
 .copyright-text {

@@ -126,7 +126,7 @@ const facilitiesList = [
     images: [
       '/images/water_spray_atas.png',
       '/images/water_spray_samping.png',
-      '/images/water_spray_bawah.png'
+      '/images/water_spray.jpg'
     ],
     description: 'Busa salju aktif pH netral dan tekanan air stabil untuk meluruhkan debu jalanan tanpa merusak cat.'
   }

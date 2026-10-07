@@ -353,7 +353,7 @@
                 <MessageSquare class="btn-icon" />
                 <span>WhatsApp: 0821-4324-3184</span>
               </a> -->
-              <a href="https://maps.google.com/?q=Aer+Car+Wash+Jl+Bali+No+144+Blitar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <a href="https://maps.app.goo.gl/euUY6TVDstqSZVzF7" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                 <MapPin class="btn-icon" />
                 <span>Petunjuk Google Maps</span>
               </a>

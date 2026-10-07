@@ -18,12 +18,13 @@
               <MapPin class="loc-icon text-cyan" />
               <div>
                 <h3>Alamat Workshop</h3>
-                <p>Jl. Bali No. 144, Kota Blitar, Jawa Timur 66111</p>
+                <p>Jl. Bali No. 144, Kota Blitar, Jawa Timur 66137</p>
               </div>
             </div>
             <a 
-              href="https://maps.google.com/?q=Aer+Car+Wash+Jl+Bali+No+144+Blitar" 
+              href="https://maps.app.goo.gl/euUY6TVDstqSZVzF7" 
               target="_blank" 
+              rel="noopener noreferrer"
               class="btn btn-primary w-full mt-3"
             >
               <Navigation class="btn-icon" />
@@ -67,14 +68,14 @@
         <div class="map-side">
           <div class="map-wrapper">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.889078601664!2d112.16487147575239!3d-8.098481291931662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ec6cd5419bcf%3A0x6bfa8a36fa2c3f8e!2sAlun-Alun%20Kota%20Blitar!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.6268802264903!2d112.17148137575276!3d-8.112291691907148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ebb5eaeefa4d%3A0x1829dd5dd523c3cb!2sAer%20Carwash!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
               width="100%" 
               height="100%" 
               style="border:0;" 
               allowfullscreen="" 
               loading="lazy" 
               referrerpolicy="no-referrer-when-downgrade"
-              title="Peta Lokasi Aercarwash Blitar"
+              title="Peta Lokasi Aer Carwash Blitar"
             ></iframe>
             <div class="map-overlay-badge">
               <div class="badge-dot pulse"></div>
