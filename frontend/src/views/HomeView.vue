@@ -3,6 +3,12 @@
   <div class="home-page">
     <!-- 1. HERO SECTION -->
     <section class="hero-section">
+      <!-- Full Hero Background Image (50% Opacity) -->
+      <div class="hero-bg-backdrop">
+        <img src="/images/aer_car_wash_depan.jpg" alt="Aer Drive Thru Carwash Blitar - Tampak Depan" class="hero-bg-img" />
+        <div class="hero-bg-overlay"></div>
+      </div>
+
       <div class="container hero-container">
         <div class="hero-content">
           <div class="hero-badge">
@@ -40,26 +46,6 @@
             <div class="stat-item">
               <span class="stat-number">07.00 - 23.00</span>
               <span class="stat-label">Buka Setiap Hari</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-image-wrapper">
-            <img src="/images/aer_car_wash_depan.jpg" alt="Aer Drive Thru Carwash Blitar - Tampak Depan" class="hero-car-img" />
-            <div class="floating-stat-card card-top">
-              <Clock class="floating-icon text-cyan" />
-              <div>
-                <strong>Hanya 10 Menit</strong>
-                <p>Ekspres Drive-Thru</p>
-              </div>
-            </div>
-            <div class="floating-stat-card card-bottom">
-              <Sparkles class="floating-icon text-gold" />
-              <div>
-                <strong>Buka Sampai Malam</strong>
-                <p>07.00 - 23.00 WIB</p>
-              </div>
             </div>
           </div>
         </div>
@@ -226,7 +212,7 @@
             <ul class="mem-features">
               <li><Check class="mem-chk text-gold" /> <span>Terdaftar <strong>3 Plat Mobil</strong></span></li>
               <li><Check class="mem-chk text-gold" /> <span>Masa aktif <strong>30 Hari</strong> penuh</span></li>
-              <li><Check class="mem-chk text-gold" /> <span>Cuci <strong>tiap hari</strong> (Maksimal 1 mobil/hari bergantian)</span></li>
+              <li><Check class="mem-chk text-gold" /> <span>Cuci <strong>tiap hari</strong> (Maksimal 1 mobil)</span></li>
               <li><Check class="mem-chk text-gold" /> <span>Bebas ganti mobil terdaftar</span></li>
             </ul>
             <a href="https://wa.me/6282143243184?text=Halo%20Aer%20Carwash,%20saya%20mau%20daftar%20Membership%20399k%20(3%20Plat%20Mobil)" target="_blank" rel="noopener noreferrer" class="btn btn-primary w-full">
@@ -373,22 +359,65 @@ import { MessageSquare, ArrowRight, Clock, Sparkles, Check, Car, MapPin, Coffee 
 /* Hero Section */
 .hero-section {
   position: relative;
-  padding: 60px 0 80px 0;
+  min-height: 560px;
+  padding: 75px 0 85px 0;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
+/* Full Hero Background Image (50% Opacity) */
+.hero-bg-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 38%;
+  opacity: 1;
+  filter: brightness(0.92) contrast(1.06);
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  inset: 0;
+  /* Overlay tipis agar bangunan dan area workshop tampak sangat jelas */
+  background: linear-gradient(90deg, rgba(7, 14, 27, 0.78) 0%, rgba(7, 14, 27, 0.45) 48%, rgba(7, 14, 27, 0.08) 85%),
+              linear-gradient(180deg, transparent 72%, rgba(7, 14, 27, 0.85) 100%);
+}
+
 .hero-container {
-  display: grid;
-  grid-template-columns: 1.15fr 0.95fr;
-  align-items: center;
-  gap: 50px;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 680px;
 }
 
 @media (max-width: 992px) {
-  .hero-container {
-    grid-template-columns: 1fr;
+  .hero-section {
+    padding: 60px 0 70px 0;
+    min-height: auto;
+  }
+
+  .hero-content {
+    max-width: 100%;
     text-align: center;
-    gap: 40px;
+  }
+
+  .hero-bg-overlay {
+    background: linear-gradient(180deg, rgba(7, 14, 27, 0.68) 0%, rgba(7, 14, 27, 0.72) 100%);
   }
 }
 
@@ -435,9 +464,10 @@ import { MessageSquare, ArrowRight, Clock, Sparkles, Check, Car, MapPin, Coffee 
 
 .hero-subtitle {
   font-size: 1.12rem;
-  color: #94a3b8;
+  color: #f1f5f9;
   margin-bottom: 34px;
   line-height: 1.65;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95), 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 .hero-subtitle strong {
