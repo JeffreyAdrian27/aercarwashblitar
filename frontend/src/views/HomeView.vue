@@ -349,10 +349,10 @@
               Tidak perlu reservasi rumit. Langsung datang ke <strong>Jl. Bali No. 144, Kota Blitar</strong> atau hubungi kami lewat WhatsApp jika ada pertanyaan.
             </p>
             <div class="cta-actions">
-              <a href="https://wa.me/6282143243184" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+              <!-- <a href="https://wa.me/6282143243184" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
                 <MessageSquare class="btn-icon" />
                 <span>WhatsApp: 0821-4324-3184</span>
-              </a>
+              </a> -->
               <a href="https://maps.google.com/?q=Aer+Car+Wash+Jl+Bali+No+144+Blitar" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                 <MapPin class="btn-icon" />
                 <span>Petunjuk Google Maps</span>
